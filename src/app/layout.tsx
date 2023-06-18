@@ -1,8 +1,6 @@
 import { Header } from "@/components/Header";
-import { Inter } from "next/font/google";
-import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="bg-[#242424]">
+      <body className="bg-[#242424]">
         <Header />
         {children}
       </body>
